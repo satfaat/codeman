@@ -3,3 +3,8 @@ from fractions import Fraction
 #b = input()
 f = Fraction(3,4)
 print(f)
+
+import random
+dir(random) #get info from random
+help(random.randint)
+random.randint(1, 60)
