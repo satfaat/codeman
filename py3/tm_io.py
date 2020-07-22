@@ -23,3 +23,12 @@ print('You will be ' + str(int(myAge)+1) + ' in a year.')
     person = input('What is your name? ')
     print('Hello, ', person)
 # end
+
+tasks = open('todos.txt')
+for chore in tasks:
+    print(chore, end='')
+tasks.close()
+
+with open('todos.txt') as tasks:
+    for chore in tasks:
+        print(chore, end='')
