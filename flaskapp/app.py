@@ -2,13 +2,11 @@
 from flask import Flask, render_template, request, escape #redirect
 from vsearch import search4letters
 from decodurl import encodurl, decodurl
+from datetime import datetime
 #import urllib.parse
 
 app = Flask(__name__)
-
-@app.route('/user/<name>')
-def user(name):
-    return '<h1>Hello, %s!</h1>' % name
+app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
 
 def log_request(req: 'flask_request', res: str) -> None:
     with open('vsearch.log', 'a') as log:
@@ -74,8 +72,26 @@ def view_the_log()-> 'html':
                                 the_row_titles = titles,
                                 the_data = contents,)
 
+@app.route('/user/<name>') #/user/<int:id>
+def user(name):
+    user_agent = request.headers.get('User-Agent')
+    txt1 = '<h1>Hello, %s!</h1>' % name
+    txt2 = '<p>Your browser is %s</p>' % user_agent
+    txt = txt1 + txt2
+    return  txt
+
+@app.route('/about')
+def about():
+    """Renders the about page."""
+    return render_template(
+        'about.jade',
+        title='About',
+        year=datetime.now().year,
+        message='Your application description page.'
+    )
+
 print('We start off in:', __name__)
 #if __name__ == '__main__':
-if __name__ == 'app':
+if __name__ == '__main__': #app or __main__
     app.run(debug=True)
     print('We end up in:', __name__)
