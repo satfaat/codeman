@@ -33,3 +33,17 @@ print(a)
 
 a = "Hello, World!"
 print(a[1])
+
+#Arrays
+
+#TUPLE кортеж
+tuple() # ()
+
+#LIST 
+list() # []
+
+# Словарь
+dict() # {}
+
+# SET множество
+set() # {}
