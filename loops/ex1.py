@@ -1,8 +1,9 @@
+""" Python 2 syntax """
 for i in [1, 2, 3]:
   print(i)
 
-  for ch in "Hi!":
-    print(ch)
+for ch in "Hi!":
+  print(ch)
 
 for num in range(5):
   print('Rocks!')
