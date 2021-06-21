@@ -1,3 +1,4 @@
 jupyterlab
 pyperclip
 pyyaml
+Send2Trash

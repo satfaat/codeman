@@ -56,3 +56,14 @@ def record_dt(file):
 record_dt(tst_f)
 #data = update_yml(tst_f)
 #print(data, type(data))
+
+
+file = 'db/tstconf.yaml'
+
+def read_this2(file):
+    with open(file, "r") as yamlfile:
+        data = yaml.load(yamlfile, Loader=yaml.FullLoader)
+        print("Read successful")
+    print(data)
+
+read_this2(file)
