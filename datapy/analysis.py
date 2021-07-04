@@ -77,3 +77,25 @@ dict() # {}
 
 # SET множество
 set() # {}
+
+
+str1 = "WelcomeToMUO"
+# This method will return "True" as all the characters are alphanumeric
+checkstr1 = str1.isalnum()
+print(checkstr1)
+str2 = "Welcome To MUO"
+# This method will return "False" as the string have 2 whitespaces which are not alphanumeric
+checkstr2 = str2.isalnum()
+print(checkstr2)
+str3 = "#WelcomeToMUO"
+# This method will return "False" as the string have a special character "#" which is not alphanumeric
+checkstr3 = str3.isalnum()
+print(checkstr3)
+str4 = "274962472"
+# This method will return "True" as all the characters are alphanumeric
+checkstr4 = str4.isalnum()
+print(checkstr4)
+str5 = "Welcome2MUO"
+# This method will return "True" as all the characters are alphanumeric
+checkstr5 = str5.isalnum()
+print(checkstr5)
