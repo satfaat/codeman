@@ -1,6 +1,7 @@
 # my folders
 .vscode/
 .env*/
+db.tst/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
