@@ -1,1 +1,7 @@
 jupyterlab
+pandas
+seaborn
+lxml
+html5lib
+BeautifulSoup4
+opencv-python
