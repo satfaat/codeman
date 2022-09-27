@@ -5,3 +5,5 @@ lxml
 html5lib
 BeautifulSoup4
 opencv-python
+httpx
+webbrowser
