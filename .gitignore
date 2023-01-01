@@ -1,7 +1,12 @@
 # my folders
 .vscode/
+# fo python
 .env*/
+# for data
 db.tst/
+# for go
+go/bin
+go/pkg
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
