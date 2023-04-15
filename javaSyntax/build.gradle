@@ -3,18 +3,26 @@ plugins {
     id 'groovy'
 }
 
-group = 'org.syntax'
+group = 'org.syntax'  // dev.syntax
 version = '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
 }
 
+String userSys = new File("src\\test\\resources\\.vault\\.env.txt").text
+
 dependencies {
-    implementation 'org.apache.groovy:groovy:4.0.10'
+    implementation fileTree('C:/Users/' + userSys + '/scoop/apps/groovy/current/lib') {
+        include '*.jar'
+        include '*/*.jar'
+    }
+    //implementation 'org.apache.groovy:groovy:4.0.10'
     testImplementation platform('org.junit:junit-bom:5.9.2')
     testImplementation 'org.junit.jupiter:junit-jupiter:5.9.2'
     testImplementation 'org.spockframework:spock-core:2.4-M1-groovy-4.0'
+    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.14.2'
+    implementation 'org.projectlombok:lombok:1.18.26'
 }
 
 test {

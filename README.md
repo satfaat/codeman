@@ -1,5 +1,5 @@
-- codeman
-# python
+code syntax collection
+
 
 ### exit from console
 - Ctrl+z  # windows
