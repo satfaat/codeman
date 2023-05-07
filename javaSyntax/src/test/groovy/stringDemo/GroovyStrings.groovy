@@ -1,4 +1,4 @@
-package groovyDemo
+package stringDemo
 
 
 class SimpleEmployee {
