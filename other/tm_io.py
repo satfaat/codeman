@@ -1,9 +1,9 @@
 # Output
-    print('some text')
+print('some text')
 
 # input
-    myName = input()
-    person = input('What is your name? ')
+myName = input()
+person = input('What is your name? ')
 
 # Example v3:
 print('Hello')
@@ -19,9 +19,9 @@ print('You will be ' + str(int(myAge)+1) + ' in a year.')
 # end
 
 # short version
-    print('Hello, World')
-    person = input('What is your name? ')
-    print('Hello, ', person)
+print('Hello, World')
+person = input('What is your name? ')
+print('Hello, ', person)
 # end
 
 tasks = open('todos.txt')
